@@ -1,0 +1,50 @@
+###############################################################################
+#  UnixBench - Release 5.1.3, based on:
+#  The BYTE UNIX Benchmarks - Release 3
+#          Module: Run   SID: 3.11 5/15/91 19:30:14
+# Original Byte benchmarks written by:
+#       Ben Smith,              Tom Yager at BYTE Magazine
+#       ben@bytepb.byte.com     tyager@bytepb.byte.com
+# BIX:  bensmith                tyager
+#
+##############################################################################
+# General Purpose Benchmark
+# based on the work by Ken McDonell, Computer Science, Monash University
+#
+#  You will need ...
+#       perl Time::HiRes IO::Handlecat cc chmod comm cp date dc df echo
+#       kill ls make mkdir rm sed test time touch tty umask who
+###############################################################################
+#  Modification Log:
+# $Header: run,v 5.2 88/01/12 06:23:43 kenj Exp $
+#     Ken McDonell, Computer Science, Monash University
+#     August 1, 1983
+# 3/89 - Ben Smith - BYTE: globalized many variables, modernized syntax
+# 5/89 - commented and modernized. Removed workload items till they
+#        have been modernized. Added database server test.
+# 11/14/89 - Made modifications to reflect new version of fstime
+#        and elimination of mem tests.
+# 10/22/90 - Many tests have been flipped so that they run for
+#        a specified length of time and loops are counted.
+# 4/3/91 - Cleaned up and debugged several test parameters - Ben
+# 4/9/91 - Added structure for creating index and determing flavor of UNIX
+# 4/26/91 - Made changes and corrections suggested by Tin Le of Sony
+# 5/15/91 - Removed db from distribution
+# 4/4/92    Jon Tombs <jon@robots.ox.ac.uk> fixed for GNU time to look like
+#               BSD (don't know the format of sysV!)
+# 12/95   - Massive changes for portability, speed, and more meaningful index
+#               DCN     David C Niemi <niemi@tux.org>
+# 1997.06.20    DCN     Fixed overflow condition in fstime.c on fast machines
+# 1997.08.24    DCN     Modified "system", replaced double with
+#                       whetstone-double in "index"
+# 1997.09.10    DCN     Added perlbench as an Exhibition benchmark
+# 1997.09.23    DCN     Added rgooch's select as an Exhibition benchmark
+# 1999.07.28    DCN     "select" not compiled or run by default, because it
+#                       does not compile on many platforms.  PerlBench also
+#                       not run by default.
+# 2007.09.26    IS      Huge rewrite -- see release notes in README.
+# 2007.10.12    IS      Added graphics tests, categories feature.
+# 2007.10.14    IS      Set and report LANG.  Added "grep" and "sysexec".
+# 2007.12.22    IS      Tiny fixes; see README.
+# 2011.01.13    KDL     Fix for parallel compilation.
+
